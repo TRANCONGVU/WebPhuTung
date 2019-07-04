@@ -1,0 +1,43 @@
+.head {
+	background-color : #019de6;
+	height: 30px;
+}
+.head img {
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	float: right;
+}
+.logo {
+	padding: 20px 0;
+}
+.logo img {
+	width: 300px;
+	height: 120px;
+	object-fit: cover;
+}
+
+.head2-top  {
+	font-size: 14px;
+	padding: 10px;
+}
+.head2-top a {
+	margin : 0 10px;
+}
+.head2-top i {
+	color: red;
+}
+.head2-form {
+	margin-top: 30px;
+}
+.head2-form input {
+	width: 400px;
+	position: relative;
+	right:  0;
+	float: right;
+}
+.head2-form .btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
