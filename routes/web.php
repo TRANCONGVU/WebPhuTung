@@ -17,4 +17,14 @@ Route::get('trang-chu', [
 	'uses' => 'Controller_1@get_trangchu'
 ]);
 
+Route::get('gioithieu', [
+	'as' =>'gioithieu',
+	'uses' => 'Controller_1@get_gioithieu'
+]);
+
+
+Route::get('sanpham', [
+	'as' =>'sanpham',
+	'uses' => 'Controller_1@get_sanpham'
+]);
 
