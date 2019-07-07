@@ -28,3 +28,13 @@ Route::get('sanpham', [
 	'uses' => 'Controller_1@get_sanpham'
 ]);
 
+// Sơn
+Route::prefix('chinh-sach-hoat-dong')->group(function () {
+  Route::get('bao-hanh-bao-tri', function () {
+      return view('pages.baohanhbaotri');
+  })->name('bao-hanh-bao-tri');
+});
+Route::get('aaa', function(){
+  return view('pages.lienhe');
+});
+
