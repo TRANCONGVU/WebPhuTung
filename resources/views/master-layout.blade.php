@@ -6,7 +6,7 @@
 	<title>toi la vu</title>
 	<base href="{{asset('')}}">
 	<link rel="stylesheet" href="">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" type="image/x-icon" href="https://kenh14cdn.com/2018/4/13/photo-4-1523613034062930366784.jpg" />
 	<link rel="stylesheet" type="text/css" href="{{ asset('lib/bootstrap_4.0.0/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/reset-browser.css') }}">
@@ -23,7 +23,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
 	<script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('lib/bootstrap_4.0.0/js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('lib/bootstrap_4.0.0/js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/content.js') }}"></script>
 
 </head>
 <body>
