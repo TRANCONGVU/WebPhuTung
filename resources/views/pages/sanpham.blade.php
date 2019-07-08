@@ -1,6 +1,7 @@
 @extends('master-layout')
 @section('content')
-    page sản phẩm
-  viết htlm css vào đây
+  		<h1>
+  			đây là page sản phẩm
+  		</h1>
 
 @endsection
