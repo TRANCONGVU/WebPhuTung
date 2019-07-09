@@ -12,7 +12,7 @@
     <div class="container head2">
         <div class="row">
             <div class="col-md-6 logo">
-                <img src="images/logo-1.jpg" alt="">
+                <img src="images/logoTN.png" alt="">
             </div>
             <div class="col-md-6 d-flex flex-column text-right">
                 <div class="head2-top">
@@ -45,10 +45,25 @@
             <ul class="nav-ul-lv-1">
                 <li><a href="{{ url('trang-chu') }}"><i class="fas fa-home"></i></a></li>
                 <li class="sanpham" style="position : unset">
-                    <a href="{{ url('product') }}">giới thiệu<i class="fas fa-caret-down"></i></a>
+                    <a href="{{ url('gioithieu') }}">giới thiệu</a>
+                    <ul class="nav-ul-lv-2">
+                        <li><a href="#">Lịch sử hình thành công ty</a></li>
+                        <li><a href="#">Sơ đồ tổ chức</a></li>
+                        <li><a href="#">Các lĩnh vực xã hội</a></li>
+                    </ul>
                 </li>
                 <li class="sanpham" style="position : unset">
-                    <a href="{{ url('product') }}">Sản phẩm<i class="fas fa-caret-down"></i></a>
+                    <a href="{{ url('sanpham') }}">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="{{ url('sale') }}">Tin tức sự kiện</a>
+                    <ul class="nav-ul-lv-2">
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">Tin tư vấn</a></li>
+                        <li><a href="#">Tin công ty</a></li>
+                        <li><a href="#">Sơn xe đạp</a></li>
+                        <li><a href="#">Sự kiện</a></li>
+                    </ul>
                 </li>
                 <li><a href="{{ route('tin-tuc-su-kien') }}">Tin tức sự kiện<i class="fas fa-caret-down"></i></a>
                   <ul class="nav-ul-lv-2">
@@ -87,10 +102,23 @@
                 </li>
                 <li class="lienhe-led">
                     <a href="{{ url('lien-he') }}">Liên hệ</a>
+
                 </li>
             </ul>
-            <div class="menu-mobile-button">
-                <i class="fas fa-bars"></i>
+            <div class="menu-mobile2">
+                <div class="menu-mobile-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="head2-form head2-form-mobile">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nhập từ khóa tìm kiếm">
+                                <button class="btn"> <i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
     </div>
