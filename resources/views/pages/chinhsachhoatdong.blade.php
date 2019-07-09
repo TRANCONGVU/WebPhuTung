@@ -5,11 +5,11 @@
     <div class="container">
         <div class="row">
             {{-- Tim kiem nang cao --}}
-            <div class="col-lg-3 offset-lg-1">
+            <div class="col-lg-3">
                 @include('pages.timkiemnangcao')
             </div>
             {{-- Chinh sach hoat dong --}}
-            <div class="col-lg-7">
+            <div class="col-lg-9">
                 <h3 class="title-block">Chính Sách Hoạt Động</h3>
                 <div class="policy">
                   <div class="header-content">

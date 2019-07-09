@@ -65,9 +65,18 @@
                         <li><a href="#">Sự kiện</a></li>
                     </ul>
                 </li>
+                <li><a href="{{ route('tin-tuc-su-kien') }}">Tin tức sự kiện<i class="fas fa-caret-down"></i></a>
+                  <ul class="nav-ul-lv-2">
+                    <li><a href="{{ route('khuyen-mai') }}">Khuyến mãi</a></li>
+                    <li><a href="">Tin tư vấn</a></li>
+                    <li><a href="">Tin công ty</a></li>
+                    <li><a href="">Sơn xe điện</a></li>
+                    <li><a href="">Sự kiện</a></li>
+                  </ul>
+                </li>
                 <li>
-                    <a href="{{ url('bosuutap') }}">hỏi đáp</a>
-                    <ul class="nav-ul-lv-2">
+                    <a href="{{ url('hoi-dap') }}">hỏi đáp<i class="fas fa-caret-down"></i></a>
+                    <ul class="nav-ul-lv-2" style="width:250px;">
                         <li><a href="#">Câu hỏi chung</a></li>
                         <li><a href="#">Giao hàng và hoàn trả</a></li>
                         <li><a href="#">Những câu hỏi thường gặp</a></li>
@@ -76,15 +85,6 @@
                 </li>
                 <li class="lienhe-led"><a href="{{ url('gioithieu') }}">chính sách thành viên</a></li>
                 <li class="lienhe-led">
-<!-- <<<<<<< HEAD -->
-                    <a href="{{ url('lienhe') }}">Liên hệ</a>
-                    <ul class="nav-ul-lv-2">
-                        <li><a href="{{ url('lienhe') }}">chính sách hoạt động</a></li>
-                        <li><a href="{{ url('cauhoi') }}">Hệ thống trạm</a></li>
-                        <li><a href="{{ url('gioithieu') }}">Liên hệ</a></li>
-                    </ul>
-
-<!-- ======= -->
                   <a href="{{ url('chinh-sach-hoat-dong') }}">chính sách hoạt động <i class="fas fa-caret-down"></i></a>
                   <ul class="nav-ul-lv-2" style="width:280px;">
                       <li><a href="{{ route('quy-dinh-chung') }}">Chính sách & quy định chung</a></li>
@@ -102,7 +102,7 @@
                 </li>
                 <li class="lienhe-led">
                     <a href="{{ url('lien-he') }}">Liên hệ</a>
-<!-- >>>>>>> 49835b289323a800394d88ad18fc1bc7d37fd30c -->
+
                 </li>
             </ul>
             <div class="menu-mobile2">
