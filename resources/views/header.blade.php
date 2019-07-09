@@ -63,14 +63,14 @@
                 <li class="lienhe-led">
                   <a href="{{ url('chinh-sach-hoat-dong') }}">chính sách hoạt động <i class="fas fa-caret-down"></i></a>
                   <ul class="nav-ul-lv-2" style="width:280px;">
-                      <li><a href="{{ url('quy-dinh-chung') }}">Chính sách & quy định chung</a></li>
-                      <li><a href="{{ url('bao-hanh-bao-tri') }}">Chính sách bảo hành bảo trì</a></li>
-                      <li><a href="{{ url('bao-mat-thong-tin') }}">Chính sách bảo mật thông tin</a></li>
-                      <li><a href="{{ url('van-chuyen') }}">Chính sách vận chuyển giao nhận</a></li>
-                      <li><a href="{{ url('thanh-toan') }}">Quy định & hình thức thanh toán</a></li>
+                      <li><a href="{{ route('quy-dinh-chung') }}">Chính sách & quy định chung</a></li>
+                      <li><a href="{{ route('bao-hanh-bao-tri') }}">Chính sách bảo hành bảo trì</a></li>
+                      <li><a href="{{ route('bao-mat-thong-tin') }}">Chính sách bảo mật thông tin</a></li>
+                      <li><a href="{{ route('van-chuyen') }}">Chính sách vận chuyển giao nhận</a></li>
+                      <li><a href="{{ route('thanh-toan') }}">Quy định & hình thức thanh toán</a></li>
                   </ul>
                 </li>
-                <li class="lienhe-led"><a href="">hệ thống trạm <i class="fas fa-caret-down"></i></a>
+                <li class="lienhe-led"><a href="{{ url('he-thong-tram-hcm') }}">hệ thống trạm <i class="fas fa-caret-down"></i></a>
                   <ul class="nav-ul-lv-2">
                     <li><a href="{{ url('he-thong-tram-hcm') }}">Tp Hồ Chí Minh</a></li>
                     <li><a href="{{ url('he-thong-tram-hn') }}">Đại lý Hà Nội</a></li>

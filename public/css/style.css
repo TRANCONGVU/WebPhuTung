@@ -264,6 +264,9 @@ textarea {
   font-family: Arial;
   width: 150px;
 }
+.input-info {
+  width: 90%;
+}
 /* map */
 .mapouter {
   position: relative;
