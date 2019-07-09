@@ -50,13 +50,22 @@
                 <li class="sanpham" style="position : unset">
                     <a href="{{ url('product') }}">Sản phẩm<i class="fas fa-caret-down"></i></a>
                 </li>
-                <li><a href="{{ url('sale') }}">Tin tức sự kiện</a></li>
+                <li><a href="{{ route('tin-tuc-su-kien') }}">Tin tức sự kiện<i class="fas fa-caret-down"></i></a>
+                  <ul class="nav-ul-lv-2">
+                    <li><a href="{{ route('khuyen-mai') }}">Khuyến mãi</a></li>
+                    <li><a href="">Tin tư vấn</a></li>
+                    <li><a href="">Tin công ty</a></li>
+                    <li><a href="">Sơn xe điện</a></li>
+                    <li><a href="">Sự kiện</a></li>
+                  </ul>
+                </li>
                 <li>
-                    <a href="{{ url('bosuutap') }}">hỏi đáp<i class="fas fa-caret-down"></i></a>
-                    <ul class="nav-ul-lv-2">
-                        <li><a href="#">Bộ sưu tâp 1</a></li>
-                        <li><a href="#">Bộ sưu tập 2</a></li>
-                        <li><a href="#">Bộ sưu tập 3</a></li>
+                    <a href="{{ url('hoi-dap') }}">hỏi đáp<i class="fas fa-caret-down"></i></a>
+                    <ul class="nav-ul-lv-2" style="width:250px;">
+                        <li><a href="#">Câu hỏi chung</a></li>
+                        <li><a href="#">Giao hàng và hoàn trả</a></li>
+                        <li><a href="#">Những câu hỏi thường gặp</a></li>
+                        <li><a href="#">Quy tắc kiểm tra hàng lỗi</a></li>
                     </ul>
                 </li>
                 <li class="lienhe-led"><a href="{{ url('gioithieu') }}">chính sách thành viên</a></li>

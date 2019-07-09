@@ -11,44 +11,27 @@
 |
 */
 
+Route::get('/', function() {
+	return view('pages.trangchu');
+});
 
-Route::get('trang-chu', [
-	'as' =>'trang-chu',
-	'uses' => 'Controller_1@get_trangchu'
-]);
-Route::get('tintuc', [
-	'as' =>'tintuc',
-	'uses' => 'Controller_1@get_tintuc'
-]);
-Route::get('khuyenmai', [
-	'as' =>'kkhuyenmai',
-	'uses' => 'Controller_1@get_khuyenmai'
-]);
+Route::prefix('tin-tuc-su-kien')->group(function () {
 
-Route::get('gioithieu', [
-	'as' =>'gioithieu',
-	'uses' => 'Controller_1@get_gioithieu'
-]);
+  Route::get('/', function() {
+    return view('pages.tintucsukien');
+  })->name('tin-tuc-su-kien');
 
+  Route::get('khuyen-mai', function() {
+    return view('pages.khuyenmai');
+  })->name('khuyen-mai');
 
-Route::get('sanpham', [
-	'as' =>'sanpham',
-	'uses' => 'Controller_1@get_sanpham'
-]);
+});
 
-Route::get('gioithieu', [
-	'as' =>'gioithieu',
-	'uses' => 'Controller_1@get_gioithieu'
-]);
-
-
-Route::get('sanpham', [
-	'as' =>'sanpham',
-	'uses' => 'Controller_1@get_sanpham'
-]);
-
-// Sơn
 Route::prefix('chinh-sach-hoat-dong')->group(function () {
+
+  Route::get('/', function () {
+    return view('pages.chinhsachhoatdong');
+  })->name('chinh-sach-hoat-dong');
 
   Route::get('quy-dinh-chung', function () {
       return view('pages.quydinhchung');
