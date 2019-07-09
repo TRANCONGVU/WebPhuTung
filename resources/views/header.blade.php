@@ -99,16 +99,6 @@
                 <div class="menu-mobile-button">
                     <i class="fas fa-bars"></i>
                 </div>
-
-                <div class="head2-form head2-form-mobile">
-                    <form>
-                        <div class="form-row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Nhập từ khóa tìm kiếm">
-                                <button class="btn"> <i class="fas fa-search"></i></button>
-                            </div>
-                        </div>
-                </div>
             </div>
         </div>
     </div>
