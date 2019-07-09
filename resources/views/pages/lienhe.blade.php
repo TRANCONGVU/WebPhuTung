@@ -32,42 +32,42 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 pb-4"><strong>Đóng góp ý kiến</strong></div>
-                    <form action="">
-                        <div class="col-lg-6">
+                <form action="">
+                    <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-3 label">Họ tên <span style="color:red;">(*)</span>:</div>
-                            <div class="col-lg-9"><input type="text" name="name"></div>
+                            <div class="col-lg-9"><input class="input-info" type="text" name="name"></div>
                         </div>
                         <div class="row">
                             <div class="col-lg-3 label">Địa chỉ:</div>
-                            <div class="col-lg-9"><input type="text" name="address"></div>
+                            <div class="col-lg-9"><input class="input-info" type="text" name="address"></div>
                         </div>
                         <div class="row">
                             <div class="col-lg-3 label">Email:</div>
-                            <div class="col-lg-9"><input type="email" name="email"></div>
+                            <div class="col-lg-9"><input class="input-info" type="email" name="email"></div>
                         </div>
                         <div class="row">
                             <div class="col-lg-3 label">Điện thoại:</div>
-                            <div class="col-lg-9"><input type="text" name="phone"></div>
+                            <div class="col-lg-9"><input class="input-info" type="text" name="phone"></div>
                         </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-3 label">Tiêu đề:</div>
+                            <div class="col-lg-9"><input class="input-info" type="text" name="title"></div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col-lg-3 label">Tiêu đề:</div>
-                                <div class="col-lg-9"><input type="text" name="title"></div>
+                        <div class="row">
+                            <div class="col-lg-3 label">Câu hỏi <span style="color:red;">(*)</span>:</div>
+                            <div class="col-lg-9">
+                                <textarea name="question" id=""></textarea>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-3 label">Câu hỏi <span style="color:red;">(*)</span>:</div>
-                                <div class="col-lg-9">
-                                  <textarea name="question" id=""></textarea>
-                                </div>
-                            </div>
                         </div>
-                        <div class="col-lg-12 button pt-3">
-                          <a href="" class="btn btn-primary">Gửi</a>
-                          <a href="" class="btn btn-dark">Nhập lại</a>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="col-lg-12 button pt-3">
+                        <a href="" class="btn btn-primary">Gửi</a>
+                        <a href="" class="btn btn-dark">Nhập lại</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
