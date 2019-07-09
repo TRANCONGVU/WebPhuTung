@@ -45,7 +45,7 @@
             <ul class="nav-ul-lv-1">
                 <li><a href="{{ url('trang-chu') }}"><i class="fas fa-home"></i></a></li>
                 <li class="sanpham" style="position : unset">
-                    <a href="{{ url('gioithieu') }}">giới thiệu</a>
+                    <a href="{{ url('gioi-thieu') }}">giới thiệu</a>
                     <ul class="nav-ul-lv-2">
                         <li><a href="#">Lịch sử hình thành công ty</a></li>
                         <li><a href="#">Sơ đồ tổ chức</a></li>
@@ -54,16 +54,6 @@
                 </li>
                 <li class="sanpham" style="position : unset">
                     <a href="{{ url('sanpham') }}">Sản phẩm</a>
-                </li>
-                <li>
-                    <a href="{{ url('sale') }}">Tin tức sự kiện</a>
-                    <ul class="nav-ul-lv-2">
-                        <li><a href="#">Khuyến mãi</a></li>
-                        <li><a href="#">Tin tư vấn</a></li>
-                        <li><a href="#">Tin công ty</a></li>
-                        <li><a href="#">Sơn xe đạp</a></li>
-                        <li><a href="#">Sự kiện</a></li>
-                    </ul>
                 </li>
                 <li><a href="{{ route('tin-tuc-su-kien') }}">Tin tức sự kiện<i class="fas fa-caret-down"></i></a>
                   <ul class="nav-ul-lv-2">
