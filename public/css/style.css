@@ -1,3 +1,11 @@
+
+img, iframe {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+
 .head {
 	background-color : #019de6;
 	height: 30px;
