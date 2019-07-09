@@ -245,9 +245,6 @@ input[type="radio"] {
   font-size: 13px;
   line-height: 30px;
 }
-input {
-  width: 90%;
-}
 textarea {
   width: 90%;
   height: 82px;
@@ -255,6 +252,9 @@ textarea {
 .button a {
   font-family: Arial;
   width: 150px;
+}
+.input-info {
+  width: 90%;
 }
 /* map */
 .mapouter {
