@@ -56,6 +56,7 @@
 	<script type="text/javascript" src="{{ asset('lib/bootstrap_4.0.0/js/bootstrap.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('lib/OwlCarousel2-2.3.4/owl.carousel.min.js') }}"></script>
 	<script src="{{asset('js/logo.js')}}"></script>
+	<script src="{{asset('js/nav-horizontal.js')}}"></script>
 	
 </body>
 </html>
