@@ -16,6 +16,9 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/header.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/footer.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+	
 
 	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('lib/banner-slider/engine1/style.css') }}" />
@@ -33,5 +36,11 @@
 @yield('content')
 @include('footer')
 
+	
+	<script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('lib/bootstrap_4.0.0/js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('lib/OwlCarousel2-2.3.4/owl.carousel.min.js') }}"></script>
+	<script src="{{asset('js/logo.js')}}"></script>
+	
 </body>
 </html>

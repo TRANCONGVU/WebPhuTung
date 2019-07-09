@@ -1,3 +1,11 @@
+
+img, iframe {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+
 .head {
 	background-color : #019de6;
 	height: 30px;
@@ -244,6 +252,9 @@ input[type="radio"] {
   font-family: Arial;
   font-size: 13px;
   line-height: 30px;
+}
+input {
+  width: 90%;
 }
 textarea {
   width: 90%;
