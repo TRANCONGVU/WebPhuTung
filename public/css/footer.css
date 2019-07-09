@@ -1,0 +1,142 @@
+.logo-slider {
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;
+  background-color: #f8f8f8;
+}
+.logo-slider h3 {
+  font-size: 22px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 150px;
+}
+.logo-slider .owl-theme .owl-nav.disabled {
+  display: block;
+}
+.logo-slider .owl-theme .owl-nav {
+  position: relative;
+  bottom: 110px;
+}
+.logo-slider .owl-theme .owl-nav .owl-prev {
+  position: absolute;
+  left: -50px;
+}
+.logo-slider .owl-theme .owl-nav .owl-prev span {
+  font-size: 45px;
+}
+.logo-slider .owl-theme .owl-nav .owl-next {
+  position: absolute;
+  right: -50px;
+}
+.logo-slider .owl-theme .owl-nav .owl-next span {
+  font-size: 45px;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  background: #02A6EF;
+  line-height: 16px;
+}
+#footer .colum-2 {
+  border-right: 1px solid #ddd;
+}
+#footer .colum-2 .title-big h2 {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+#footer .colum-2 .title-big i {
+  font-size: 12px;
+  font-weight: 400;
+}
+#footer .colum-2 .exhibition-room {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+#footer .colum-2 .exhibition-room a {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#footer .colum-2 .exhibition-room a span {
+  font-style: italic;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+#footer .colum-2 .exhibition-room .tel p {
+  font-size: 12px;
+  font-weight: 400;
+}
+#footer .colum-2 .exhibition-room .tel p i {
+  font-size: 15px;
+  color: #ff9933;
+}
+#footer .colum-2 .exhibition-room .tel .map-icon {
+  margin-left: 40px;
+}
+#footer .colum-2 .exhibition-room .tel .map-icon p {
+  margin: 0;
+}
+#footer .colum-2 .exhibition-room .tel .map-icon p span {
+  font-size: 11px;
+  color: #0000a0;
+}
+#footer .colum-2 .exhibition-room .tel .map-icon p i {
+  font-size: 15px;
+  color: #ff9933;
+}
+#footer .colum-3 h2 {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#footer .colum-3 h2 i {
+  font-size: 15px;
+  color: #ff9933;
+}
+#footer .colum-3 .genaral p i {
+  font-size: 15px;
+  color: #ff9933;
+}
+#footer .colum-3 .genaral .content-text {
+  font-size: 12px;
+  margin-left: 10px;
+}
+#footer .colum-3 .genaral .content-text p {
+  margin: 0;
+}
+#footer .colum-3 .phu-tung a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+  #footer figure {
+    display: none;
+  }
+  #footer .colum-3 {
+    padding-top: 15px;
+  }
+
+  .logo-slider {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo-slider {
+    display: none;
+  }
+
+  main {
+    margin-bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

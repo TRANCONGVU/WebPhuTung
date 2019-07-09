@@ -75,9 +75,8 @@
                     </ul>
                 </li>
                 <li class="lienhe-led"><a href="{{ url('gioithieu') }}">chính sách thành viên</a></li>
-                <li class="lienhe-led"><a href="{ { url('gioithieu') }}">chính sách hoạt động</a></li>
-                <li class="lienhe-led"><a href="{{ url('gioithieu') }}">hệ thống trạm</a></li>
                 <li class="lienhe-led">
+<!-- <<<<<<< HEAD -->
                     <a href="{{ url('lienhe') }}">Liên hệ</a>
                     <ul class="nav-ul-lv-2">
                         <li><a href="{{ url('lienhe') }}">chính sách hoạt động</a></li>
@@ -85,6 +84,25 @@
                         <li><a href="{{ url('gioithieu') }}">Liên hệ</a></li>
                     </ul>
 
+<!-- ======= -->
+                  <a href="{{ url('chinh-sach-hoat-dong') }}">chính sách hoạt động <i class="fas fa-caret-down"></i></a>
+                  <ul class="nav-ul-lv-2" style="width:280px;">
+                      <li><a href="{{ route('quy-dinh-chung') }}">Chính sách & quy định chung</a></li>
+                      <li><a href="{{ route('bao-hanh-bao-tri') }}">Chính sách bảo hành bảo trì</a></li>
+                      <li><a href="{{ route('bao-mat-thong-tin') }}">Chính sách bảo mật thông tin</a></li>
+                      <li><a href="{{ route('van-chuyen') }}">Chính sách vận chuyển giao nhận</a></li>
+                      <li><a href="{{ route('thanh-toan') }}">Quy định & hình thức thanh toán</a></li>
+                  </ul>
+                </li>
+                <li class="lienhe-led"><a href="{{ url('he-thong-tram-hcm') }}">hệ thống trạm <i class="fas fa-caret-down"></i></a>
+                  <ul class="nav-ul-lv-2">
+                    <li><a href="{{ url('he-thong-tram-hcm') }}">Tp Hồ Chí Minh</a></li>
+                    <li><a href="{{ url('he-thong-tram-hn') }}">Đại lý Hà Nội</a></li>
+                  </ul>
+                </li>
+                <li class="lienhe-led">
+                    <a href="{{ url('lien-he') }}">Liên hệ</a>
+<!-- >>>>>>> 49835b289323a800394d88ad18fc1bc7d37fd30c -->
                 </li>
             </ul>
             <div class="menu-mobile2">
