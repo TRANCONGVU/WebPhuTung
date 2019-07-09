@@ -49,3 +49,231 @@ img, iframe {
 	top: 0;
 	right: 0;
 }
+/* Sơn css */
+/* chinh sach hoat dong */
+.main-page {
+  padding-top: 30px;
+}
+.col-lg-3 .sidebar-left .form-search-advance {
+  font-family: Arial;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+.title-block {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #02a5ee;
+  text-indent: 20px;
+  font-size: 13px;
+  color: white;
+  margin: 0;
+}
+.sidebar-left .form-search-advance strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+input[type="radio"] {
+  margin: 1px 0 4px 0;
+}
+.form-daily label {
+  display: block;
+  color: #333333;
+  margin: 20px 0 10px;
+  font-size: 13px;
+  font-family: Arial;
+}
+.form-daily select {
+  font-size: 13px;
+  font-style: italic;
+}
+.form-search-advance a {
+  margin-top: 20px;
+  width: 100%;
+}
+.banner-adv-left img {
+  margin: 15px 0;
+  width: 262.5px;
+}
+.list-product .list-menu li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  display: block;
+  border-bottom: 1px solid #dddedf;
+  height: 34px;
+  line-height: 38px;
+  overflow: hidden;
+  padding-left: 10px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 13px;
+  font-size: Arial;
+}
+.list-product .list-menu li a:hover {
+  color: #076597;
+}
+.policy {
+  padding: 20px 20px 50px 20px;
+  border: 1px solid #f4f2f2;
+}
+.policy .header-content {
+  margin-bottom: 30px;
+}
+.policy .header-content span,
+.policy .header-content span a {
+  color: #848383;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+.banner-adv-right img {
+  width: 652.5px;
+  margin-top: 20px;
+}
+.policy .body-content h6 {
+  text-transform: uppercase;
+}
+.policy .body-content p,
+.policy .body-content strong {
+  font-family: Arial;
+  font-size: 13px;
+}
+.policy .body-content .time,
+.other-post .time {
+  font-size: 12px;
+  font-style: italic;
+  color: #c5c4c4;
+}
+.other-post .fa-undo {
+  font-size: 11px;
+  color: red;
+}
+.policy .body-content ul li {
+  margin: 25px 0;
+  font-size: 13px;
+}
+.policy .body-content .item li,
+.policy .body-content .list-item .item li {
+  list-style: disc;
+  list-style-position: inside;
+  margin: 5px 0;
+}
+.policy .body-content .list-item li {
+  list-style: decimal;
+  margin: 20px 0;
+  list-style-position: inside;
+}
+.policy .body-content .other-item li {
+  margin: 2px 0;
+}
+.policy .body-content ul li:before {
+ content: '-';
+}
+.policy .body-content .item li:before,
+.policy .body-content .list-item li:before {
+  content: '';
+ }
+.other-post {
+  padding-top: 10px;
+}
+.other-post h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #626161;
+  font-weight: bold;
+  background: #f7f7f7;
+  padding: 10px 0;
+  text-indent: 20px;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+}
+.other-post ul {
+  border: 1px solid #f4f2f2;
+  padding: 15px 25px;
+  border-top: none;
+}
+.other-post ul li .fa-undo {
+  margin-right: 10px;
+}
+.other-post ul li span {
+  margin-right: 15px;
+}
+.other-post ul li a {
+  font-size: 13px;
+  text-decoration: none;
+}
+.other-post ul li a:hover {
+  color: red;
+}
+/* He thong tram */
+.content-system {
+  background-color: #eff1f3;
+  padding: 18px;
+}
+.system .content-system .image-content-system {
+  padding: 4px;
+  border: 1px solid #cdcdcd;
+}
+.system .content-system .text-content a {
+  color: #02708f;
+  font-size: 11px;
+  font-style: italic;
+  text-decoration: none;
+}
+.system .content-system .text-content {
+  font-size: 14px;
+}
+.name-store strong a {
+  text-decoration: none;
+}
+.name-store strong a:hover {
+  color: red;
+}
+/* Lien he */
+.info-contact {
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 30px;
+  color: #050102;
+}
+.info-contact a {
+  color: blue;
+  text-decoration: none;
+}
+.info-contact a:hover {
+  color: red;
+}
+.label {
+  font-weight: 700;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 30px;
+}
+input {
+  width: 90%;
+}
+textarea {
+  width: 90%;
+  height: 82px;
+}
+.button a {
+  font-family: Arial;
+  width: 150px;
+}
+/* map */
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 375px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 375px;
+  width: 600px;
+}
