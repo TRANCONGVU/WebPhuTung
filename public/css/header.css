@@ -181,7 +181,7 @@ nav.nav-horizontal a{
 	text-align: center;
 }
 .nav-horizontal-content ul.nav-ul-lv-1>li>a i {
-	font-size: 10px;
+	font-size: 15px;
 }
 .nav-horizontal-content ul.nav-ul-lv-1>li>a>i,.nav-horizontal-content ul.nav-ul-lv-2>li>a>i,.nav-horizontal-content ul.nav-ul-lv-3>li>a>i{
 	-webkit-transition: 0.5s all;
@@ -201,8 +201,8 @@ nav.nav-horizontal a{
 .nav-horizontal-content ul.nav-ul-lv-1>li>a{
 	color: #fff;
     line-height: 40px;
+	font-size: 14px;
     text-transform: uppercase;
-	font-size: 13px;
 	display: inline-block;
 	padding: 0 10px;
 	    -webkit-padding-start: 13px;
@@ -212,7 +212,8 @@ nav.nav-horizontal a{
 }
 .nav-horizontal-content ul.nav-ul-lv-1>li:first-child>a{border-left: none;}
 .nav-horizontal-content ul.nav-ul-lv-1>li>a:hover{
-	color: #e3baba;
+	/*color: #e3baba;*/
+	background-color: #1a6dc7;
 }
 .nav-horizontal-content ul.nav-ul-lv-1>li:not(:first-child)>a:hover i{
 	transform: rotate(180deg);
@@ -220,14 +221,14 @@ nav.nav-horizontal a{
 .nav-horizontal-content ul.nav-ul-lv-2{
 	position: absolute;
 	top: 100%;
-	left: 0px;
+	left: 0;
 	width: 220px;
 	text-align: left;
-    background: #fff;
+    background: #1a6dc7;
     color:black;
 	display: none;
-    box-shadow: 1px 5px 25px #ccc;
-    border : 1px solid #dedede;
+    /*box-shadow: 1px 5px 25px #ccc;*/
+    /*border : 1px solid #dedede;*/
 
 }
 .nav-horizontal-content ul.nav-ul-lv-2>li{
@@ -364,17 +365,17 @@ section.banner-slider-active-1{
 
 /*---------------------------------------Menu-mobile---------------------------------------*/
 .menu-mobile-button{
-	position: absolute;
-	top: -5px;
-	right: 40px;
-	font-size: 20px;
-	line-height: 40px;
-	background: #999490;
+	/*position: absolute;*/
+	/*top: -5px;*/
+	/*right: 40px;*/
+	/*font-size: 20px;*/
+	/*line-height: 40px;*/
+	/*background: #999490;*/
 	color: #fff;
 	z-index: 101;
 	padding: 0 12px;
 	cursor: pointer;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	-webkit-transition: 0.3s all;
 	-moz-transition: 0.3s all;
 	-ms-transition: 0.3s all;
@@ -385,8 +386,13 @@ section.banner-slider-active-1{
     text-align: center;
     border-radius: 0;
     height: 100%;
-    background-color: black;
+    /*background-color: black;*/
     border-left: 1px solid;
+    display: flex !important;
+    align-items: center;
+}
+.menu-mobile-button i{
+	font-size: 30px !important;
 }
 .menu-mobile{
     position: relative;
@@ -407,7 +413,7 @@ section.banner-slider-active-1{
 	transition: 0.3s all;
 	display: none;
     width: 25%;
-    text-align: center;
+    /*text-align: center;*/
     border-radius: 0;
     height: 100%;
     background-color: black;
@@ -445,8 +451,8 @@ section.banner-slider-active-1{
 }
 
 .menu-mobile-button-active{
-    background: #fff;
-    color:black;
+    /*background: #fff;*/
+    /*color:black;*/
 }
 html{
 	position: relative;
@@ -470,7 +476,7 @@ section.menu-mobile-active{
 	opacity: 1;
 }
 .menu-mobile-box{
-	width: 250px;
+	width: 100%;
 	height: 100%;
 	background: #fff;
 }
@@ -516,7 +522,8 @@ section.menu-mobile-active{
 	width: 100%;
 }
 .menu-left-title h3{
-	text-align: center;
+	/*text-align: center;*/
+	text-indent: 30px;
 	font-size: 16px;
 	text-transform: uppercase;
 	line-height: 30px;
