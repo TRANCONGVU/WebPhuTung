@@ -12,7 +12,7 @@
     <div class="container head2">
         <div class="row">
             <div class="col-md-6 logo">
-                <img src="images/logo-1.jpg" alt="">
+                <img src="images/logoTN.png" alt="">
             </div>
             <div class="col-md-6 d-flex flex-column text-right">
                 <div class="head2-top">
@@ -45,10 +45,10 @@
             <ul class="nav-ul-lv-1">
                 <li><a href="{{ url('trang-chu') }}"><i class="fas fa-home"></i></a></li>
                 <li class="sanpham" style="position : unset">
-                    <a href="{{ url('product') }}">giới thiệu<i class="fas fa-caret-down"></i></a>
+                    <a href="{{ url('gioithieu') }}">giới thiệu<i class="fas fa-caret-down"></i></a>
                 </li>
                 <li class="sanpham" style="position : unset">
-                    <a href="{{ url('product') }}">Sản phẩm<i class="fas fa-caret-down"></i></a>
+                    <a href="{{ url('sanpham') }}">Sản phẩm<i class="fas fa-caret-down"></i></a>
                 </li>
                 <li><a href="{{ url('sale') }}">Tin tức sự kiện</a></li>
                 <li>

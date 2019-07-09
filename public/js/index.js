@@ -1,0 +1,36 @@
+$(document).ready(function(){
+  $(".banner").owlCarousel({
+  	items:1,
+  	loop:true,
+  	nav:true,
+  	dots:true,
+  	autoplay:true
+  });
+  $(".slide-product").owlCarousel({
+  	loop:false,
+  	nav:true,
+  	dots:false,
+    responsive:{
+      992:{
+        items:4
+      },
+      768:{
+        items:3
+      }
+    }
+  });
+  $(".footer-slide").owlCarousel({
+  	loop:true,
+  	nav:true,
+  	dots:false,
+  	autoplay:true,
+    responsive:{
+      992:{
+        items:6
+      },
+      768:{
+        items:5
+      }
+    }
+  });
+});

@@ -682,7 +682,7 @@ section.footer-alllogo{
     filter: grayscale(0);
 }
 footer{
-	background: #e66a25;
+	/*background: #e66a25;*/
 	padding: 20px 0;
 	color: #fff;
 	line-height: 25px;
