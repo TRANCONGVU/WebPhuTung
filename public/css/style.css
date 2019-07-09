@@ -20,8 +20,8 @@ img, iframe {
 	padding: 20px 0;
 }
 .logo img {
-	width: 300px;
-	height: 120px;
+/*	width: 300px;
+	height: 120px;*/
 	object-fit: cover;
 }
 

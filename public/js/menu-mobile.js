@@ -33,18 +33,18 @@ $('.menu-mobile-bg').click(function(event) {
         $('.nav-horizontal-content').removeClass('nav-horizontal-content-active-1');
 });
 
-var search = document.getElementById("search");
-var form = document.querySelector(".search2");
-var check = true;
+// var search = document.getElementById("search");
+// var form = document.querySelector(".search2");
+// var check = true;
 
-search.addEventListener('click', function () {
-    if (check === true) {
-        form.classList.add('search');
-        form.classList.remove('search2');
-        check = false;
-    } else {
-        form.classList.add('search2');
-        form.classList.remove('search');
-        check = true;
-    }
-});
+// search.addEventListener('click', function () {
+//     if (check === true) {
+//         form.classList.add('search');
+//         form.classList.remove('search2');
+//         check = false;
+//     } else {
+//         form.classList.add('search2');
+//         form.classList.remove('search');
+//         check = true;
+//     }
+// });
