@@ -14,6 +14,9 @@
 Route::get('/', function() {
 	return view('pages.trangchu');
 });
+//Route::get('/', function() {
+//    return view('admin.index');
+//});
 
 Route::prefix('tin-tuc-su-kien')->group(function () {
 
@@ -67,5 +70,17 @@ Route::get('lien-he', function () {
   return view('pages.lienhe');
 })->name('lien-he');
 
+/*
+ * Làm quyền Admin
+ * */
+//Đăng nhập admin
+Route::prefix('users')->group(function ()
+{
+//    Route::get('/','Auth\Admin\LoginController@getlogin')->name('admin.login');
+//    Route::get('/', 'Auth\Admin\AdminController@index')->name('admin.index');
+    Route::get('login','Auth\Admin\LoginController@getlogin')->name('admin.login.get');
 
+    Route::post('login','Auth\Admin\LoginController@postlogin')->name('admin.login.post');
+    Route::post('account','Auth\Admin\AccountController@postAccount')->name('admin.account.post');
 
+});
