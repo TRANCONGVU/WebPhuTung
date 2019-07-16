@@ -13,6 +13,7 @@ class Webphutung extends Migration
      */
     public function up()
     {
+//        Users
         Schema::create('role', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
@@ -32,41 +33,127 @@ class Webphutung extends Migration
                 ->on('role');
             $table->timestamps();
         });
-
-        Schema::create('requirements', function (Blueprint $table) {
+//News
+        Schema::create('cate_news', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('phone');
-            $table->string('email');
-            $table->text('content');
-            $table->integer('status');
+            $table->string('slug');
             $table->timestamps();
         });
-        Schema::create('recruitments', function (Blueprint $table) {
+        Schema::create('news', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('slug');
-            $table->string('summary');
-            $table->string('image');
+            $table->text('summary');
             $table->text('content');
-            $table->string('address')->nullable();
-            $table->string('phone')->nullable();
-            $table->date('begin_time')->nullable();
-            $table->date('end_time')->nullable();
+            $table->string('image');
+            $table->bigInteger('price');
+            $table->bigInteger('cate_id')->unsigned();
+            $table->foreign('cate_id')->references('id')->on('cate_news')->onDelete('cascade');
             $table->timestamps();
         });
-        Schema::create('tagrecruitments', function (Blueprint $table) {
+        Schema::create('tag_news', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->bigInteger('recruitments_id')->unsigned();
+            $table->bigInteger('news_id')->unsigned();
             $table
-                ->foreign('recruitments_id')
+                ->foreign('news_id')
                 ->references('id')
-                ->on('recruitments')
+                ->on('news')
                 ->onDelete('cascade');
             $table->integer('searchs');
         });
-        //
+
+//        Chính sách hoạt động
+        Schema::create('cate_active_policy',function (Blueprint $table)
+        {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('slug');
+            $table->timestamps();
+        });
+        Schema::create('active_policy',function (Blueprint $table)
+        {
+            $table->bigIncrements('id');
+            $table->string('title');
+            $table->string('slug');
+            $table->text('content');
+            $table->text('summary');
+            $table->string('image');
+            $table->bigInteger('cate_id')->unsigned();
+            $table
+                ->foreign('cate_id')
+                ->references('id')
+                ->on('cate_active_policy')
+                ->onDelete('cascade');
+            $table->timestamps();
+        });
+        Schema::create('tag_active_policy',function (Blueprint $table)
+        {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->bigInteger('active_policy_id')->unsigned();
+            $table
+                ->foreign('active_policy_id')
+                ->references('id')
+                ->on('active_policy')
+                ->onDelete('cascade');
+            $table->integer('searchs');
+        });
+
+//        Chính sách thành viên
+        Schema::create('cate_member_policy',function (Blueprint $table)
+        {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('slug');
+            $table->timestamps();
+        });
+        Schema::create('member_policy',function (Blueprint $table)
+        {
+            $table->bigIncrements('id');
+            $table->string('title');
+            $table->string('slug');
+            $table->text('content');
+            $table->text('summary');
+            $table->string('image');
+            $table->bigInteger('cate_id')->unsigned();
+            $table
+                ->foreign('cate_id')
+                ->references('id')
+                ->on('cate_member_policy')
+                ->onDelete('cascade');
+            $table->timestamps();
+        });
+        Schema::create('tag_member_policy',function (Blueprint $table)
+        {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->bigInteger('member_policy_id')->unsigned();
+            $table
+                ->foreign('member_policy_id')
+                ->references('id')
+                ->on('member_policy')
+                ->onDelete('cascade');
+            $table->integer('searchs');
+        });
+//         Hỏi đáp
+        Schema::create('Questions',function (Blueprint $table)
+        {
+            $table->string('phone')->nullable();
+            $table->string('email',191)->unique();
+            $table->text('content');
+            $table->integer('status');
+            $table->bigInteger('user_id')->unsigned();
+            $table
+                ->foreign('user_id')
+                ->references('id')
+                ->on('admins')
+                ->onDelete('cascade');
+
+        });
+
+
     }
 
     /**

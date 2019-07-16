@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function() {
-	return view('admin.index');
+	return view('pages.trangchu');
 });
 //Route::get('/', function() {
 //    return view('admin.index');
@@ -77,7 +77,7 @@ Route::get('lien-he', function () {
 Route::prefix('users')->group(function ()
 {
 //    Route::get('/','Auth\Admin\LoginController@getlogin')->name('admin.login');
-    Route::get('/', 'Auth\Admin\AdminController@index')->name('admin.index');
+//    Route::get('/', 'Auth\Admin\AdminController@index')->name('admin.index');
     Route::get('login','Auth\Admin\LoginController@getlogin')->name('admin.login.get');
 
     Route::post('login','Auth\Admin\LoginController@postlogin')->name('admin.login.post');

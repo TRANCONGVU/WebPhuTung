@@ -115,10 +115,16 @@
                         {{--</div>--}}
                         {{--@endif--}}
                         <div style="margin-bottom: 30px;">
+                            <div style="display: inline-block; margin-right: 15px">
+                                <input name="level" type="radio" value="1" checked="checked"/>Công tác viên
+                            </div>
+                            <div style="display: inline-block; margin-right: 15px">
+                                <input name="level" type="radio" value="2"/>Quản trị viên
+                            </div>
+                            <div style="display: inline-block;">
+                                <input name="level" type="radio" value="3"/>Admin
+                            </div>
 
-                            <input name="level" type="radio" value="1" checked="checked"/>Công tác viên
-                            <input name="level" type="radio" value="2"/>Quản trị viên
-                            <input name="level" type="radio" value="3"/>Admin
                         </div>
                         <div class="form-left-to-w3l">
                             <p style="text-align: left; font-size: smaller ; color: red" id="error_name"></p>
