@@ -11,13 +11,40 @@
 |
 */
 
-Route::get('/', function() {
-	return view('pages.trangchu');
-});
+
 //Route::get('/', function() {
-//    return view('admin.index');
+//
 //});
 
+//Route::('admin')->group(function () {
+//
+//    Route::get('', function ()
+//    {
+//        return view('admin.layout.index');
+//    });
+//    Route::prefix('san-pham')->group(function () {
+//
+//    });
+//});
+Route::group(['prefix'=>'admin'],function()
+{
+//    Route::get('home',function ()
+//    {
+//        return view('admin.layout.index');
+//    });
+    Route::group(['prefix'=>'san-pham'],function()
+    {	//admin/theloai/danhsach
+        Route::get('danh-sach','Admin\SanPhamController@getDanhSach')->name('admin.sanpham.danhsach');
+
+        Route::get('them','Admin\SanPhamController@getThem')->name('admin.sanpham.getthem');
+        Route::post('them','Admin\SanPhamController@postThem')->name('admin.sanpham.postthem');
+
+        Route::get('sua/{id}','Admin\SanPhamController@getSua')->name('admin.sanpham.getsua');
+        Route::post('sua/{id}','Admin\SanPhamController@postSua')->name('admin.sanpham.postsua');
+
+        Route::get('xoa/{id}','Admin\SanPhamController@getxoa')->name('admin.sanpham.getxoa');
+    });
+});
 Route::prefix('tin-tuc-su-kien')->group(function () {
 
   Route::get('/', function() {
