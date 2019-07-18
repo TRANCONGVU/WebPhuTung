@@ -231,7 +231,7 @@
     function clickPasswordAgain() {
         var inputPassword = document.getElementById('password');
         var inputPasswordAgain = document.getElementById('passwordAgain');
-        alert(inputPasswordAgain.value !== inputPasswordAgain.value);
+        // alert(inputPasswordAgain.value !== inputPasswordAgain.value);
         if (inputPassword.value !== inputPasswordAgain.value) {
             document.getElementById('error_passwordAgain').innerHTML = "Mật khẩu chưa khớp";
             return false;

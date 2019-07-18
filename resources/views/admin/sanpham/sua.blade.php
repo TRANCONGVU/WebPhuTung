@@ -25,7 +25,7 @@
                             {{session('thongbao')}}
                         </div>
                     @endif
-                    <form action="{{route('admin.sanpham.postthem')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{url('admin/san-pham/sua/'.$product->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label>Thể loại sản phầm</label>
@@ -38,28 +38,31 @@
 
                         <div class="form-group">
                             <label>Tiêu đề</label>
-                            <input class="form-control" name="title" placeholder="Nhập sản phẩm" value="{{$re}}"/>
+                            <input class="form-control" name="title" placeholder="Nhập sản phẩm" value="{{$product->title}}"/>
                         </div>
 
                         <div class="form-group">
                             <label>Nội Dung</label>
-                            <textarea name="noidung" id="content" class="form-control ckeditor" rows="5"></textarea>
+                            <textarea name="noidung" id="content" class="form-control ckeditor" rows="5">
+                                {{$product->content}}
+                            </textarea>
                         </div>
                         <div class="form-group">
                             <label>Giá sản phẩm</label>
-                            <input class="form-control" name="price" placeholder="Nhập giá sản phẩm" />
+                            <input class="form-control" name="price" placeholder="Nhập giá sản phẩm" value="{{$product->price}}" />
                         </div>
                         <div class="form-group">
                             <label>Số lượng sản phẩm</label>
-                            <input class="form-control" name="amount" placeholder="Nhập số lượng" />
+                            <input class="form-control" name="amount" placeholder="Nhập số lượng" value="{{$product->amount}}"/>
                         </div>
                         <div class="form-group">
                             <label>Nơi sản xuát</label>
-                            <input class="form-control" name="where_production" placeholder="Noi sản xuất" />
+                            <input class="form-control" name="where_production" placeholder="Noi sản xuất" value="{{$product->where_production}}"/>
                         </div>
                         <div class="form-group">
                             <label>Hình ảnh</label>
-                            <input type="file" name="avatar" class="form-control">
+                            <p><img src="admin/upload/images/san-pham/{{$product->avatar}}" width="200px"></p>
+                            <input type="file" name="avatar" class="form-control" value="{{$product->avatar}}">
                         </div>
                         <div class="form-group">
                             <label>Nổi bật</label>

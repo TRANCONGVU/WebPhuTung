@@ -12,9 +12,9 @@
 */
 
 
-//Route::get('/', function() {
-//
-//});
+Route::get('/', function() {
+    return view('pages.trangchu');
+});
 
 //Route::('admin')->group(function () {
 //

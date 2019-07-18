@@ -58,6 +58,7 @@ class SanPhamController extends Controller
             $avatar = "";
         }
 
+
         DB::table('product')->insert([
 
             'title'=>$request->title,
@@ -124,14 +125,60 @@ class SanPhamController extends Controller
     }
     public function getxoa($id)
     {
-
         DB::table('product')->where('id','=',$id)->delete();
         return redirect('admin/san-pham/danh-sach')->with('thongbao','Xoa tin thanh cong');
     }
 
-    public function getSua()
+    public function getSua($id)
+    {
+        $cate_product = DB::table('cate_product')->get();
+        $product = DB::table('product')->find($id);
+//        dd($product);
+        return view('admin.sanpham.sua',['product'=>$product,'cate_product'=>$cate_product]);
+    }
+    public function postSua(Request $request, $id)
     {
 
+
+        if($request->hasFile('avatar')) {
+            $file = $request->file('avatar');
+            $duoi = $file->getClientOriginalExtension();
+            if($duoi != 'jpg' && $duoi != 'png' && $duoi != 'jpeg')
+            {
+                return redirect('admin/san-pham/them')->with('thongbao','Ban chi duoc chon file co duoi jpg png ...');
+            }
+            $name = $file->getClientOriginalName();
+            $avatar = str_random(4) . "_" . $name;
+            while (file_exists("admin/upload/images/san-pham/" . $avatar))
+            {
+                $avatar = str_random(4) . "_" . $name;
+            }
+//            dd($avatar);
+            $file->move("admin/upload/images/san-pham/",$avatar);
+        }
+        else{
+
+            $avatar = DB::table('product')->pluck('avatar')->first();
+
+        }
+
+
+        DB::table('product')->where('id',$id)->update([
+
+            'title'=>$request->title,
+            'content'=>$request->noidung,
+            'price'=>$request->price,
+            'avatar'=>$avatar,
+            'amount'=>$request->amount,
+            'where_production'=>$request->where_production,
+//            'post_date'=>now(),
+            'slug'=>str_slug($request->title),
+            'cate_product_id'=>$request->cate_product,
+            'status'=>$request->status,
+            'created_at'=>now(),
+
+        ]);
+        return redirect('admin/san-pham/sua/'.$id)->with('thongbao','Thành công');
     }
 
 
